@@ -1,1 +1,12 @@
 <h1>测试,你好啊 静态网站,2020年1月16日15:30:28</h1>
+<input type="button" value="当前时间" onclick="getTime()">
+<script type="text/javascript">
+  function getTime(){
+    var date = new Date();
+    var year = date.getFullYear(); //获取年   
+    var month = date.getMonth();//获取月   
+    var day = date.getDay(); //获取当日
+    var time = year+"-"+month+"-"+day; //组合时间
+    alert("当前日期："+time);
+  }
+</script>
